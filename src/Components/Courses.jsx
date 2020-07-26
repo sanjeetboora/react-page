@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Courses.css';
 import info from '../info.json';
 import CourseFeatures from './CourseFeatures';
 import CourseCard from './CourseCard';
 
-class Courses extends Component {
+class Courses extends React.Component {
   // fixed values for intial display of courses
-  state = {
-    courseCategory: 'All',
-    gradeStart: 5,
-    gradeEnd: 8,
-    courseList: [],
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      courseCategory: 'All',
+      gradeStart: 5,
+      gradeEnd: 8,
+      courseList: [],
+    };
+  }
   //intial display of courses filtered on the basis of active grade section
   componentDidMount() {
     let courseList = info.courseDetails.filter(
