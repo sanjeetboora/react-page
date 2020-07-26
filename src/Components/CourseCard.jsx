@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './CourseCard.css';
-import info from '../info.json';
 
 class CourseCard extends Component {
   state = {};
