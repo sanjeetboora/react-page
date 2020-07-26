@@ -14,7 +14,7 @@ class CourseFeatures extends Component {
         {info.courseFeatures.map((feature) => (
           // course feature card
           <div
-            className='card col-12 col-lg-3 bg-transparent border-0'
+            className='card col-sm-12 col-md-6 col-lg-3 bg-transparent border-0'
             key={feature.id}>
             {/* header image*/}
             <img

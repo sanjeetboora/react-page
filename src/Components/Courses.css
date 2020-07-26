@@ -69,3 +69,16 @@ body {
 .courses-section-container {
   padding: 50px 70px;
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    text-align: center;
+    align-items: center;
+  }
+  .courses-section-container {
+    padding: 10% 5%;
+  }
+  .grades-container .nav-pills li.order-1 {
+    width: 100%;
+  }
+}

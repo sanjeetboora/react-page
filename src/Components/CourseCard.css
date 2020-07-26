@@ -4,9 +4,6 @@
 .course-cards {
   color: #1f2a55;
 }
-.card.col-lg-4 {
-  max-width: 30.3%;
-}
 .card-body .card-title {
   font-size: 18px;
   letter-spacing: 0.2px;
@@ -34,4 +31,9 @@
   letter-spacing: 2px;
   font-size: 14px;
   color: #076fec;
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    max-width: 30.3%;
+  }
 }

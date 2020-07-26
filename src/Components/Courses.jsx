@@ -69,7 +69,7 @@ class Courses extends Component {
         <div className='banner-container'>
           {/* Navbar */}
           <div className='navbar-container pt-3'>
-            <nav className='navbar navbar-expand-lg px-0'>
+            <nav className='navbar navbar-expand-lg navbar-light px-0'>
               <a className='navbar-brand mr-4' href='/'>
                 <img
                   src={'/Assets/Images/logo/camp-k-12-logo.png'}
@@ -85,7 +85,7 @@ class Courses extends Component {
                 aria-controls='navbarTogglerDemo02'
                 aria-expanded='false'
                 aria-label='Toggle navigation'>
-                <span className='navbar-toggler-icon'></span>
+                <span className='navbar-toggler-icon text-light'></span>
               </button>
 
               <div
@@ -115,7 +115,9 @@ class Courses extends Component {
           {/* courses features */}
           <div className='header-container'>
             <div className='pt-3 pb-5 text-white'>
-              <h1 className='font-weight-bolder mb-4'>ONLINE COURSES</h1>
+              <h1 className='font-weight-bolder col-sm-12 mb-4'>
+                ONLINE COURSES
+              </h1>
               <div className='px-1 mb-3'>
                 <CourseFeatures />
               </div>
@@ -134,7 +136,7 @@ class Courses extends Component {
                 className='shadow-sm nav nav-pills bg-white rounded-0 p-0'
                 id='pills-tab'
                 role='tablist'>
-                <li className='sm-col-12 order-1'>
+                <li className='order-1'>
                   <a
                     className='nav-link'
                     data-toggle='pill'
@@ -146,7 +148,7 @@ class Courses extends Component {
                     Grades 1-4
                   </a>
                 </li>
-                <li className='sm-col-12 order-1'>
+                <li className='order-1'>
                   <a
                     className='nav-link active'
                     data-toggle='pill'
@@ -158,7 +160,7 @@ class Courses extends Component {
                     Grades 5-8
                   </a>
                 </li>
-                <li className='sm-col-12 order-1'>
+                <li className='order-1'>
                   <a
                     className='nav-link'
                     data-toggle='pill'

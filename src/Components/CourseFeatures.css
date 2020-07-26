@@ -8,3 +8,9 @@
   line-height: 1.38;
   opacity: 0.88;
 }
+@media (max-width: 768px) {
+  .card {
+    align-items: center;
+    margin-bottom: 10%;
+  }
+}
