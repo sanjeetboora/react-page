@@ -11,7 +11,12 @@ function Coursefeatures() {
             className='card col-sm-12 col-md-6 col-lg-3 bg-transparent border-0'
             key={feature.id}>
             {/* header image*/}
-            <img src={feature.img} alt={feature.title} />
+            <img
+              src={feature.img}
+              className={i === 0 ? 'card-img-top wd-105' : 'card-img-top wd-80'}
+              alt={feature.title}
+            />
+
             {/* card body */}
             <div className='card-body p-0 py-3 mr-4'>
               <h5 className='card-title font-weight-bold'>{feature.title}</h5>
@@ -31,4 +36,5 @@ function Coursefeatures() {
     </div>
   );
 }
+
 export default Coursefeatures;
