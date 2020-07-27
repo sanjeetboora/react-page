@@ -1,8 +1,9 @@
 import React from 'react';
 import './Courses.css';
 import info from '../info.json';
-import CourseFeatures from './CourseFeatures';
-import CourseCard from './CourseCard';
+import Coursefeatures from './Coursefeatures';
+// import Coursecard from './Coursecard';
+import Abc from './Abc';
 
 class Courses extends React.Component {
   // fixed values for intial display of courses
@@ -25,6 +26,7 @@ class Courses extends React.Component {
 
   //courses filtered based upon selected grade section
   gradesCourseFilter = (grade) => {
+    console.log('inside coursefeatures1');
     let currGrade = grade;
     let courseList = [];
 
@@ -121,7 +123,7 @@ class Courses extends React.Component {
                 ONLINE COURSES
               </h1>
               <div className='px-1 mb-3'>
-                <CourseFeatures />
+                <Coursefeatures />
               </div>
               <button className='btn free-trial-btn rounded'>
                 BOOK A FREE TRIAL
@@ -208,7 +210,8 @@ class Courses extends React.Component {
               </div>
               {/* listing relevant course cards */}
               {this.state.courseList.length > 0 ? (
-                <CourseCard courseList={this.state.courseList} />
+                // <Coursecard courseList={this.state.courseList} />
+                <Abc courseList={this.state.courseList} />
               ) : (
                 // Show message when no courses available for selected criteria
                 <div className='text-center justify-content-between my-5 '>

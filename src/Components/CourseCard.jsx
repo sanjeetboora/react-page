@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './CourseCard.css';
+import './Coursecard.css';
 
-class CourseCard extends Component {
+class Coursecard extends Component {
   state = {};
   formatNumber(count) {
     count = count / 1000;
@@ -125,4 +125,4 @@ class CourseCard extends Component {
   }
 }
 
-export default CourseCard;
+export default Coursecard;
