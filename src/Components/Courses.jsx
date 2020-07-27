@@ -2,8 +2,7 @@ import React from 'react';
 import './Courses.css';
 import info from '../info.json';
 import Coursefeatures from './Coursefeatures';
-// import Coursecard from './Coursecard';
-import Abc from './Abc';
+import Coursecard from './Coursecard';
 
 class Courses extends React.Component {
   // fixed values for intial display of courses
@@ -210,8 +209,7 @@ class Courses extends React.Component {
               </div>
               {/* listing relevant course cards */}
               {this.state.courseList.length > 0 ? (
-                // <Coursecard courseList={this.state.courseList} />
-                <Abc courseList={this.state.courseList} />
+                <Coursecard courseList={this.state.courseList} />
               ) : (
                 // Show message when no courses available for selected criteria
                 <div className='text-center justify-content-between my-5 '>

@@ -1,5 +1,10 @@
-import React, { Component } from 'react';
-class Pagenotfound extends Component {
+import React from 'react';
+class Pagenotfound extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <div>
