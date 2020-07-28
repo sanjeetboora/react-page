@@ -3,12 +3,10 @@ import './Coursecard.css';
 
 function Coursecard(props) {
   return (
-    <div className='course-cards row justify-content-center mt-4'>
+    <div className='course-cards row mt-4 m-0'>
       {props.courseList.map((course) => {
         return (
-          <div
-            className='card col-sm-12 col-md-6 col-lg-4 mx-3 my-3 bg-white rounded border p-0'
-            key={course.id}>
+          <div className='card bg-white rounded border p-0' key={course.id}>
             {/* course card header image */}
             <img src={course.img} className='card-img-top' alt='courseImage' />
             {/* course card body */}

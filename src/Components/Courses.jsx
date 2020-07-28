@@ -73,12 +73,21 @@ class Courses extends React.Component {
           {/* Navbar */}
           <div className='navbar-container pt-3'>
             <nav className='navbar navbar-expand-lg navbar-light px-0'>
+              {/* Logo */}
               <a className='navbar-brand mr-4' href='/'>
                 <img
                   src={'/Assets/Images/logo/camp-k-12-logo.png'}
                   alt='logo'
                 />
               </a>
+              {/* Leaderboard on small screens */}
+              <div className='ml-auto d-flex d-lg-none'>
+                <img
+                  src='/Assets/Images/leaderboard/leaderboard.png'
+                  className='mr-3'
+                  alt='Leaderboard'
+                />
+              </div>
               {/* navbar toggle button for small screen */}
               <button
                 className='navbar-toggler'
@@ -99,14 +108,14 @@ class Courses extends React.Component {
                   <li className='nav-item mr-4'>OFFLINE CAMPS</li>
                   <li className='nav-item mr-4'>REFER & EARN</li>
                 </ul>
-              </div>
-              <div className='ml-auto d-flex'>
-                <img
-                  src='/Assets/Images/leaderboard/leaderboard.png'
-                  className='mr-3'
-                  alt='Leaderboard'
-                />
-                <button className='btn btn-sm mr-3 text-white font-w600 btn-bg-light px-4'>
+                <div className='ml-auto d-none d-lg-flex'>
+                  <img
+                    src='/Assets/Images/leaderboard/leaderboard.png'
+                    className='mr-3'
+                    alt='Leaderboard'
+                  />
+                </div>
+                <button className='free-trial-nav-btn btn btn-sm mr-3 text-white font-w600 btn-bg-light px-4'>
                   FREE TRIAL
                 </button>
                 <button className='btn btn-sm text-light font-w600 btn-bg-light px-4'>
@@ -114,11 +123,59 @@ class Courses extends React.Component {
                 </button>
               </div>
             </nav>
+
+            {/* <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+              <a class='navbar-brand' href='#'>
+                Navbar
+              </a>
+              <button
+                class='navbar-toggler'
+                type='button'
+                data-toggle='collapse'
+                data-target='#navbarTogglerDemo03'
+                aria-controls='navbarTogglerDemo03'
+                aria-expanded='false'
+                aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+              </button>
+
+              <div class='collapse navbar-collapse' id='navbarTogglerDemo03'>
+                <ul class='navbar-nav mr-auto mt-2 mt-lg-0'>
+                  <li class='nav-item active'>
+                    <a class='nav-link' href='#'>
+                      Home <span class='sr-only'>(current)</span>
+                    </a>
+                  </li>
+                  <li class='nav-item'>
+                    <a class='nav-link' href='#'>
+                      Link
+                    </a>
+                  </li>
+                  <li class='nav-item'>
+                    <a class='nav-link disabled' href='#'>
+                      Disabled
+                    </a>
+                  </li>
+                </ul>
+                <form class='form-inline my-2 my-lg-0'>
+                  <input
+                    class='form-control mr-sm-2'
+                    type='search'
+                    placeholder='Search'
+                  />
+                  <button
+                    class='btn btn-outline-success my-2 my-sm-0'
+                    type='submit'>
+                    Search
+                  </button>
+                </form>
+              </div>
+            </nav> */}
           </div>
           {/* courses features */}
           <div className='header-container'>
             <div className='pt-3 pb-5 text-white'>
-              <h1 className='font-weight-bolder col-sm-12 mb-4'>
+              <h1 className='font-weight-bolder col-sm-12 mb-4 p-0'>
                 ONLINE COURSES
               </h1>
               <div className='px-1 mb-3'>
@@ -179,9 +236,9 @@ class Courses extends React.Component {
             </div>
             {/* courses section */}
             <div className='courses-section-container'>
-              <div className='row justify-content-between px-2'>
+              <div className='row justify-content-between m-0'>
                 {/* selected grade and course category */}
-                <div className='col-sm-12 col-md-12 col-lg-6'>
+                <div className='section-detail col-sm-12 col-md-12 col-lg-9 p-0'>
                   Showing{' '}
                   <span className='font-weight-bold'>
                     {this.state.courseCategory}
@@ -192,7 +249,7 @@ class Courses extends React.Component {
                   </strong>
                 </div>
                 {/* course category filter dropdown*/}
-                <div className='col-sm-12 col-md-6 col-lg-3'>
+                <div className='filter-dropdown col-sm-12 col-md-12 col-lg-3 p-0'>
                   <select
                     className='form-control'
                     onChange={this.categoryCourseFilter}>

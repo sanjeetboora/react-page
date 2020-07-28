@@ -3,6 +3,9 @@
 }
 .course-cards {
   color: #1f2a55;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 2fr));
+  grid-gap: 20px;
 }
 .card-body .card-title {
   font-size: 18px;
@@ -32,8 +35,18 @@
   font-size: 14px;
   color: #076fec;
 }
-@media (min-width: 992px) {
-  .col-lg-4 {
-    max-width: 30.3%;
+@media (max-width: 320px) {
+  .course-cards {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 2fr));
+    grid-gap: 20px;
+  }
+  .course-cards .card {
+    width: 100%;
+  }
+}
+@media (min-width: 1445px) {
+  .course-cards {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    grid-gap: 40px;
   }
 }

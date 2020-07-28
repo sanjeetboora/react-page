@@ -18,7 +18,7 @@ function Coursefeatures() {
             />
 
             {/* card body */}
-            <div className='card-body p-0 py-3 mr-4'>
+            <div className='card-body p-0 py-3 mr-lg-4'>
               <h5 className='card-title font-weight-bold'>{feature.title}</h5>
 
               <p className='card-text'>
